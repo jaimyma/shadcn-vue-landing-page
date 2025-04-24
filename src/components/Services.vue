@@ -21,26 +21,28 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Custom Domain Integration",
+    title: "Personalized Workout Plans",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
+      "Receive customized workout plans tailored to your fitness level, goals, and preferences.",
     pro: 0,
   },
   {
-    title: "Social Media Integrations",
+    title: "Nutrition Tracking",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
+      "Track your daily nutrition and macros to ensure you're fueling your body properly for optimal performance.",
     pro: 0,
   },
   {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
+    title: "Progress Monitoring",
+    description:
+      "Monitor your strength, endurance, and other key performance metrics to see your progress over time.",
     pro: 0,
   },
   {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-    pro: 1,
+    title: "Virtual Coaching Sessions",
+    description:
+      "Get real-time guidance and adjustments from professional trainers to improve your form and results.",
+    pro: 0,
   },
 ];
 </script>
@@ -55,17 +57,13 @@ const serviceList: ServiceProps[] = [
     </h2>
 
     <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-      Grow Your Business
+      Achieve Your Fitness Goals
     </h2>
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      From marketing and sales to operations and strategy, we have the expertise
-      to help you achieve your goals.
+      Whether you're looking to bulk up, get lean, or improve your endurance, we offer the tools and support to help you succeed.
     </h3>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-
-    <div
-      class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto"
-    >
+    
+    <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto">
       <div
         v-for="{ title, description, pro } in serviceList"
         :key="title"
@@ -86,3 +84,5 @@ const serviceList: ServiceProps[] = [
     </div>
   </section>
 </template>
+
+<style lang="less" scoped></style>

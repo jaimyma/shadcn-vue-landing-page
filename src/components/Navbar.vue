@@ -60,7 +60,7 @@ const routeList: RouteProps[] = [
 
 const featureList: FeatureProps[] = [
   {
-    title: "Showcase Your Value ",
+    title: "Build yourself",
     description: "Highlight how your product solves user problems.",
   },
   {
@@ -69,7 +69,7 @@ const featureList: FeatureProps[] = [
       "Leverages social proof elements to establish trust and credibility.",
   },
   {
-    title: "Capture Leads",
+    title: "Improve everday",
     description:
       "Make your lead capture form visually appealing and strategically.",
   },
@@ -93,7 +93,7 @@ const isOpen = ref<boolean>(false);
       <ChevronsDown
         class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
       />
-      ShadcnVue</a
+      Mathono</a
     >
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">
@@ -203,21 +203,6 @@ const isOpen = ref<boolean>(false);
 
     <div class="hidden lg:flex">
       <ToggleTheme />
-
-      <Button
-        as-child
-        size="sm"
-        variant="ghost"
-        aria-label="View on GitHub"
-      >
-        <a
-          aria-label="View on GitHub"
-          href="https://github.com/leoMirandaa/shadcn-vue-landing-page.git"
-          target="_blank"
-        >
-          <GithubIcon class="size-5" />
-        </a>
-      </Button>
     </div>
   </header>
 </template>

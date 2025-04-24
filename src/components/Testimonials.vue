@@ -30,51 +30,51 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    name: "Michael Harris",
+    userName: "Software Engineer",
     comment:
-      "Wow Vue + Shadcn-Vue is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "I’ve been using this platform for months and it has significantly improved my productivity. The user interface is so smooth",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    name: "Emily Smith",
+    userName: "Marketing Specialist",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
-    rating: 4.8,
+      "This tool has streamlined our marketing campaigns and helped us track all our metrics in one place. Highly recommend to anyone",
+    rating: 4.9,
   },
 
   {
     image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    name: "Liam Brown",
+    userName: "Product Designer",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    rating: 4.9,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "As a designer, I find the customization options amazing. I can adjust everything to match my brand and work more efficiently.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    name: "Olivia Davis",
+    userName: "Data Analyst",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "The analytics tools provided are exactly what I needed. They’ve enabled me to analyze data faster and make better decisions for my team.",
+    rating: 4.8,
+  },
+  {
+    image: "https://github.com/shadcn.png",
+    name: "James Wilson",
+    userName: "Project Manager",
+    comment:
+      "Managing teams has never been easier! With this platform, I can stay on top of project timelines and ensure everything runs smoothly.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
+    name: "Charlotte Johnson",
+    userName: "Operations Manager",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "I love how this system integrates with all our other tools. It’s made our operations more efficient and saved us tons of time.",
     rating: 4.9,
   },
 ];

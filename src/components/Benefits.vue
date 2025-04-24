@@ -5,9 +5,9 @@ import {
   Sparkle,
   Tag,
   Paintbrush,
-  Blocks,
+  Dumbbell,
   LineChart,
-  Wallet,
+  BarChart,
 } from "lucide-vue-next";
 
 interface BenefitsProps {
@@ -18,28 +18,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "blocks",
-    title: "Build Brand Trust",
+    icon: "dumbbell",
+    title: "Personalized Workouts",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Our AI-powered coach creates customized workout plans tailored to your fitness goals and progress. No more generic routines.",
   },
   {
     icon: "lineChart",
-    title: "More Leads",
+    title: "Track Your Progress",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Monitor your fitness journey with real-time performance tracking and analytics, helping you stay on track towards your goals.",
   },
   {
-    icon: "wallet",
-    title: "Higher Conversions",
+    icon: "barChart",
+    title: "Optimize Performance",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Maximize your results by receiving actionable feedback and adjustments based on your performance data, enhancing your workouts.",
   },
   {
     icon: "sparkle",
-    title: "Test Marketing Ideas",
+    title: "Stay Motivated",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "With AI-powered insights and motivation boosters, our coach helps you stay focused and committed to achieving your fitness goals.",
   },
 ];
 
@@ -48,16 +48,16 @@ const iconMap: Record<
   | typeof Sparkle
   | typeof Tag
   | typeof Paintbrush
-  | typeof Blocks
+  | typeof Dumbbell
   | typeof LineChart
-  | typeof Wallet
+  | typeof BarChart
 > = {
   sparkle: Sparkle,
   tag: Tag,
   paintbrush: Paintbrush,
-  blocks: Blocks,
+  dumbbell: Dumbbell,
   lineChart: LineChart,
-  wallet: Wallet,
+  barChart: BarChart,
 };
 </script>
 
@@ -71,12 +71,10 @@ const iconMap: Record<
         <h2 class="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
         <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Your Shortcut to Success
+          Your AI Coach for Peak Performance
         </h2>
         <p class="text-xl text-muted-foreground mb-8">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus
-          reprehenderit architecto rerum similique facere odit deleniti
-          necessitatibus quo quae.
+          Achieve your fitness goals faster with personalized guidance, progress tracking, and constant motivation. Experience the future of training.
         </p>
       </div>
 

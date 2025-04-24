@@ -2,14 +2,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import {
-  Paintbrush,
-  MessageCircle,
+  Dumbbell,
+  Target,
   TabletSmartphone,
-  BadgeCheck,
-  Goal,
-  PictureInPicture,
-  MousePointerClick,
-  Newspaper,
+  ShieldCheck,
+  Users,
+  Clock,
+  Trophy,
+  BarChart,
 } from "lucide-vue-next";
 
 interface FeaturesProps {
@@ -23,59 +23,59 @@ const featureList: FeaturesProps[] = [
     icon: "tabletSmartphone",
     title: "Mobile Friendly",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Access your personalized workout plans and track your progress anytime, anywhere, with our mobile-friendly platform.",
   },
   {
-    icon: "badgeCheck",
-    title: "Social Proof",
+    icon: "target",
+    title: "Goal-Oriented Training",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Set your fitness goals and let our AI coach guide you through targeted training programs to help you achieve them faster.",
   },
   {
-    icon: "goal",
-    title: "Targeted Content",
+    icon: "trophy",
+    title: "Achieve Success",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Track your milestones and celebrate your achievements. The AI coach rewards your progress with tailored challenges.",
   },
   {
-    icon: "pictureInPicture",
-    title: "Strong Visuals",
+    icon: "users",
+    title: "Community Support",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Join a community of like-minded individuals who motivate each other to reach fitness goals and share success stories.",
   },
   {
-    icon: "mousePointerClick",
-    title: "Clear CTA",
+    icon: "stopwatch",
+    title: "Real-Time Feedback",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Receive instant feedback on your workouts to improve your technique, prevent injury, and optimize your performance.",
   },
   {
-    icon: "newspaper",
-    title: "Clear Headline",
+    icon: "barChart",
+    title: "Track Your Progress",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Monitor your performance over time with visual graphs and detailed statistics that show your strength, endurance, and improvements.",
   },
 ];
 
 const iconMap: Record<
   string,
+  | typeof Dumbbell
+  | typeof Target
   | typeof TabletSmartphone
-  | typeof BadgeCheck
-  | typeof Goal
-  | typeof PictureInPicture
-  | typeof Paintbrush
-  | typeof MousePointerClick
-  | typeof MessageCircle
-  | typeof Newspaper
+  | typeof ShieldCheck
+  | typeof Users
+  | typeof Clock
+  | typeof Trophy
+  | typeof BarChart
 > = {
+  dumbbell: Dumbbell,
+  target: Target,
   tabletSmartphone: TabletSmartphone,
-  badgeCheck: BadgeCheck,
-  goal: Goal,
-  pictureInPicture: PictureInPicture,
-  paintbrush: Paintbrush,
-  mousePointerClick: MousePointerClick,
-  messageCircle: MessageCircle,
-  newspaper: Newspaper,
+  shieldCheck: ShieldCheck,
+  users: Users,
+  stopwatch: Clock,
+  trophy: Trophy,
+  barChart: BarChart,
 };
 </script>
 
@@ -93,9 +93,7 @@ const iconMap: Record<
     </h2>
 
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-      fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-      facere tenetur.
+      Our AI coach is designed to help you reach your fitness goals faster and more effectively. Experience personalized workouts, real-time feedback, and a supportive community.
     </h3>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

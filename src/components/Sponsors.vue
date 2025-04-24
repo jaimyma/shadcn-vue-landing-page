@@ -3,13 +3,12 @@ import { Marquee } from "@selemondev/vue3-marquee";
 import "@selemondev/vue3-marquee/dist/style.css";
 
 import {
-  Crown,
-  Vegan,
-  Ghost,
-  Puzzle,
-  Squirrel,
-  Cookie,
-  Drama,
+  Dumbbell,
+  HeartPulse,
+  Bike,
+  Mountain,
+  Brain,
+  Timer,
 } from "lucide-vue-next";
 
 interface sponsorsProps {
@@ -19,52 +18,46 @@ interface sponsorsProps {
 
 const sponsors: sponsorsProps[] = [
   {
-    icon: "crown",
-    name: "Acmebrand",
+    icon: "dumbbell",
+    name: "Strength",
   },
   {
-    icon: "vegan",
-    name: "Acmelogo",
+    icon: "heartpulse",
+    name: "Cardio",
   },
   {
-    icon: "ghost",
-    name: "Acmesponsor",
+    icon: "bike",
+    name: "Cycling",
   },
   {
-    icon: "puzzle",
-    name: "Acmeipsum",
+    icon: "mountain",
+    name: "Outdoor",
   },
   {
-    icon: "squirrel",
-    name: "Acme",
+    icon: "brain",
+    name: "Mental",
   },
   {
-    icon: "cookie",
-    name: "Accmee",
-  },
-  {
-    icon: "drama",
-    name: "Acmetech",
+    icon: "timer",
+    name: "HIIT",
   },
 ];
 
 const iconMap: Record<
   string,
-  | typeof Crown
-  | typeof Vegan
-  | typeof Ghost
-  | typeof Puzzle
-  | typeof Squirrel
-  | typeof Cookie
-  | typeof Drama
+  | typeof Dumbbell
+  | typeof HeartPulse
+  | typeof Bike
+  | typeof Mountain
+  | typeof Brain
+  | typeof Timer
 > = {
-  crown: Crown,
-  vegan: Vegan,
-  ghost: Ghost,
-  puzzle: Puzzle,
-  squirrel: Squirrel,
-  cookie: Cookie,
-  drama: Drama,
+  dumbbell: Dumbbell,
+  heartpulse: HeartPulse,
+  bike: Bike,
+  mountain: Mountain,
+  brain: Brain,
+  timer: Timer,
 };
 </script>
 
@@ -73,7 +66,7 @@ const iconMap: Record<
     id="sponsors"
     class="max-w-[75%] mx-auto pb-24 sm:pb-32"
   >
-    <h2 class="text-lg md:text-xl text-center mb-6">Our Platinum Sponsors</h2>
+    <h2 class="text-lg md:text-xl text-center mb-6">Used For</h2>
 
     <div class="mx-auto">
       <Marquee
@@ -81,6 +74,7 @@ const iconMap: Record<
         :pauseOnHover="true"
         :fade="true"
         innerClassName="gap-[3rem]"
+        :loop="true"
       >
         <div
           v-for="{ icon, name } in sponsors"
